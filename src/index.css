@@ -1,0 +1,105 @@
+/* ====================== TAILWIND + DAISYUI (Modern v4/v5 way) ====================== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* ====================== GOOGLE FONTS ====================== */
+
+
+/* ====================== CUSTOM STYLES ====================== */
+@theme {
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Your existing custom styles (steps, forms, buttons, cards, scrollbar, etc.) */
+
+input, textarea {
+  transition: all 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #50311D;
+  box-shadow: 0 0 0 3px rgba(80, 49, 29, 0.15);
+  outline: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(80, 49, 29, 0.3);
+}
+
+.card-hover:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 25px 50px -12px rgb(80 49 29 / 0.25);
+}
+
+/* Add any other custom rules you had before */
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-arrow {
+  animation: float 2s ease-in-out infinite;
+}
+
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 1s ease-out forwards;
+}
+
+
+/* STEPS */
+
+
+
+
+/* FLOATING RECTANGLES */
+@keyframes floatSoft {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-soft {
+  animation: floatSoft 4s ease-in-out infinite;
+}
