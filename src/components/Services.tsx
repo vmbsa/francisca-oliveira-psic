@@ -34,7 +34,7 @@ function Services() {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="group relative bg-[#50311D] bg-opacity-90 p-8 rounded-xl shadow-xl max-w-xs w-full text-center border border-white hover:bg-opacity-100 transition"
+              className="group relative bg-[#50311D]/50 p-8 rounded-xl shadow-xl max-w-xs w-full text-center border border-white hover:bg-[#50311D]/70 transition"
               whileHover={{ scale: 1.05 }}
             >
               <h3 className="text-xl font-bold text-white mb-4">{service.title}</h3>

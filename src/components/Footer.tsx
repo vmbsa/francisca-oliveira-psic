@@ -56,7 +56,7 @@ function Footer() {
         }
       );
 
-      setSuccessMessage("Mensagem enviada com sucesso. Entrarei em contacto brevemente.");
+      setSuccessMessage("Obrigado pela confiança. Entrarei em contacto brevemente.");
       setFormData({
         nome: "",
         email: "",
